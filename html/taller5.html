@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos1.css">
+    <script src="../js/utilidades.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var divSuperior = crearElemento("div");
+        divSuperior.className = "flexContenedorTallerCinco divSuperior";
+
+
+        var img1 = crearImagen("../recursos/imagenes/fotografia-de-paisaje-mas-nitida-7-810x540.jpg");
+        img1.style.width = "25%";
+        img1.style.height = "226px";
+        var img2 = crearImagen("../recursos/imagenes/images.jpeg");
+        img2.style.width = "25%";
+        img2.style.height = "226px";
+        var img3 = crearImagen("../recursos/imagenes/istockphoto-1201456158-612x612.jpg");
+        img3.style.width = "25%";
+        img3.style.height = "226px";
+        var img4 = crearImagen("../recursos/imagenes/landscape-1192669_640.jpg");
+        img4.style.width = "25%";
+        img4.style.height = "226px";
+
+        var divInferior = crearElemento("div");
+        divInferior.className = "flexContenedorTallerCinco divInferior";
+
+        var divIzquierdoInferior = crearElemento("div");
+        divIzquierdoInferior.className = "divIzquierdoInferior";
+        var img5 = crearImagen("../recursos/imagenes/los-50-paisajes-maravillosos-del-mundo-para-tomar-fotos.jpg");
+        img5.style.width = "100%";
+        img5.style.height = "393px";
+
+        var divCentroInferior = crearElemento("div");
+        divCentroInferior.className = "divCentroInferior";
+        var divHijoUno = crearElemento("div");
+        var img6 = crearImagen("../recursos/imagenes/paisajes-de-yosemite-46208063.jpg");
+        img6.style.width = "100%";
+        img6.style.height = "260px";
+        var img7 = crearImagen("../recursos/imagenes/tree-736885_1280.jpg");
+        img7.style.width = "100%";
+        img7.style.height = "129px";
+
+        var divDerechoInferior = crearElemento("div");
+        divDerechoInferior.className = "divDerechoInferior";
+        var divHijoDos = crearElemento("div");
+        var divHijoTres = crearElemento("div");
+        divHijoDos.style.paddingLeft = "40px";
+        divHijoDos.style.paddingTop = "20px";
+        divHijoTres.style.paddingLeft = "218px";
+
+        var h1 = crearElementoConTexto("h1","Book a Session");
+        h1.style.color = "white";
+
+        var inputUno = crearElemento("input");
+        inputUno.type = "text";
+        inputUno.placeholder = "ㅤName";
+        inputUno.style.width = "270px";
+        inputUno.style.height = "30px";
+        inputUno.style.color = "white";
+        inputUno.style.backgroundColor = "midnightblue";
+        inputUno.style.border = "solid 2px white";
+        var br1 = crearElemento("br");
+        var br2 = crearElemento("br");
+
+        var inputDos = crearElemento("input");
+        inputDos.type = "text";
+        inputDos.placeholder = "ㅤEmail address";
+        inputDos.style.width = "270px";
+        inputDos.style.height = "30px";
+        inputDos.style.color = "white";
+        inputDos.style.backgroundColor = "midnightblue";
+        inputDos.style.border = "solid 2px white";
+        var br3 = crearElemento("br");
+        var br4 = crearElemento("br");
+
+        var textArea = crearElemento("textArea");
+        textArea.placeholder = "ㅤMessage";
+        textArea.style.width = "270px";
+        textArea.style.height = "80px";
+        textArea.style.color = "white";
+        textArea.style.backgroundColor = "midnightblue";
+        textArea.style.border = "solid 2px white";
+        var br5 = crearElemento("br");
+        var br6 = crearElemento("br");
+
+        var inputTres = crearElemento("input");
+        inputTres.type = "submit";
+        inputTres.value = "Send Now";
+        inputTres.style.width = "100px";
+        inputTres.style.height = "35px";
+        inputTres.style.color = "white";
+        inputTres.style.backgroundColor = "red";
+        inputTres.style.textAlign = "center";
+
+
+        adicionarHijo(divSuperior, img1);
+        adicionarHijo(divSuperior, img2);
+        adicionarHijo(divSuperior, img3);
+        adicionarHijo(divSuperior, img4);
+
+        adicionarHijo(divInferior, divIzquierdoInferior);
+        adicionarHijo(divIzquierdoInferior, img5);
+
+        adicionarHijo(divInferior, divCentroInferior);
+        adicionarHijo(divCentroInferior, divHijoUno);
+        adicionarHijo(divHijoUno, img6);
+        adicionarHijo(divHijoUno, img7);
+
+        adicionarHijo(divInferior, divDerechoInferior);
+        adicionarHijo(divDerechoInferior, divHijoDos);
+        adicionarHijo(divDerechoInferior, divHijoTres);
+        adicionarHijo(divHijoDos, h1);
+        adicionarHijo(divHijoDos, inputUno);
+        adicionarHijo(divHijoDos, br1);
+        adicionarHijo(divHijoDos, br2);
+        adicionarHijo(divHijoDos, inputDos);
+        adicionarHijo(divHijoDos, br3);
+        adicionarHijo(divHijoDos, br4);
+        adicionarHijo(divHijoDos, textArea);
+        adicionarHijo(divHijoDos, br6);
+        adicionarHijo(divHijoDos, br5);
+        adicionarHijo(divHijoTres, inputTres);
+        
+        adicionarBody(divSuperior);
+        adicionarBody(divInferior);
+
+    </script>
+
+    <style>
+
+    </style>
+
+</body>
+
+</html>

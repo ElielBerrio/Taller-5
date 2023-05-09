@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.flexContenedorTallerCinco {
+    display: flex;
+}
+
+.divSuperior {
+    
+    height: 25%;
+
+}
+
+.divInferior{
+    
+    height: 75%;
+    
+
+}
+
+.divIzquierdoInferior {
+    width: 25%;
+}
+
+.divCentroInferior {
+    width: 50%;
+    display: block;
+    margin: 0;
+}
+
+.divDerechoInferior {
+    width: 25%;
+    background-color: midnightblue;
+}
+
