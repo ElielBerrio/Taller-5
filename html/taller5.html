@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilos1.css">
     <script src="../js/utilidades.js"></script>
-
+    
     <title>Document</title>
 </head>
 
@@ -43,12 +43,16 @@
         var divCentroInferior = crearElemento("div");
         divCentroInferior.className = "divCentroInferior";
         var divHijoUno = crearElemento("div");
+        divHijoUno.style.display = "flex";
+        divHijoUno.style.flexDirection = "column";
         var img6 = crearImagen("../recursos/imagenes/paisajes-de-yosemite-46208063.jpg");
         img6.style.width = "100%";
         img6.style.height = "260px";
         var img7 = crearImagen("../recursos/imagenes/tree-736885_1280.jpg");
         img7.style.width = "100%";
-        img7.style.height = "129px";
+        img7.style.height = "133px";
+        img7.style.margin = 0;
+        img7.style.padding= 0;
 
         var divDerechoInferior = crearElemento("div");
         divDerechoInferior.className = "divDerechoInferior";
@@ -135,10 +139,6 @@
         adicionarBody(divInferior);
 
     </script>
-
-    <style>
-
-    </style>
 
 </body>
 
